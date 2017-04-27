@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Flexbox wireframe</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                font-family: helvetica, arial, sans-serif;
+                font-size: 0.8em;
+            }
+            
+            .wrapper {
+                display: flex;
+                width: 960px;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin: 0 auto;
+            }
+            
+            .item {
+                background: #ddd;
+                outline: 1px solid #ccc;
+                margin-bottom: 10px;
+                text-align: center;
+                padding-top: 10px;
+            }
+            
+            .logo {
+                width: 19%;
+                height: 60px;
+            }
+            
+            .hovedmenu {
+                width: 79%;
+            }
+            
+            .undermenu {
+                width: 19%;
+                height: 400px;
+            }
+            
+            .artikel {
+                width: 49%;
+            }
+            
+            .reklame {
+                width: 29%;
+            }
+            
+            .footer {
+                width: 99%;
+                height: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="item logo">Logo</div>
+            <div class="item hovedmenu">Hovedmenu</div>
+            <div class="item undermenu">Undermenu</div>
+            <div class="item artikel">Artikel</div>
+            <div class="item reklame">Reklame</div>
+            <div class="item footer">Footer</div>
+        </div>
+    </body>
+</html>

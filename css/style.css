@@ -1,0 +1,541 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FAFAFA;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    background: #b71c1c;
+    background: linear-gradient(to bottom, #b71c1c 0%,#c62828 100%);
+    background: -moz-linear-gradient(top, #b71c1c 0%, #c62828 100%);
+    background: -webkit-linear-gradient(top, #b71c1c 0%,#c62828 100%);
+    color: #FFF;
+    min-height: 80px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.header_content {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    background: url("../img/logo.png") no-repeat;
+    width: 213px;
+    height: 60px;
+    margin-top: 5px;
+    float: left;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    margin-top: 10px;
+}
+
+ul.menu li {
+    float: left;
+}
+
+ul.menu li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.menu li a:hover {
+    background-color: #a71c1c;
+}
+
+ul.menu li.icon {
+    display: none;
+}
+
+@media screen and (max-width:680px) {
+  ul.menu li:not(:first-child) {display: none;}
+  ul.menu li.icon {
+      float: right;
+    display: inline-block;
+  }
+    ul.menu {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:680px) {
+  ul.menu.responsive {position: relative;}
+  ul.menu.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.menu.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.menu.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+.content {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.contentHvid {
+    background: #FAFAFA;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.2);
+}
+
+.contentGraa {
+    background: #EEEEEE;
+    width: 100%;
+    padding-top: 10px;  
+    padding-bottom: 10px;
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.1);
+}
+
+.overskrift {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #212121;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.footer {
+    background: #212121;
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.7);
+}
+
+.footer_content {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%;
+    max-width: 450px;
+    float: left;
+}
+
+.row50 {
+    width: 100%;
+    max-width: 675px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.row50right {
+    border-left: 1px dotted #CCC;
+}
+
+@media screen and (max-width:680px) {
+    .row50right {
+        border-left: 0px;
+    }
+}
+
+.footer_text {
+    color: #FAFAFA !important;
+}
+
+.footer_title {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer_text a {
+    color:  #F5F5F5;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.5s ease-in;
+}
+
+.footer_text a:hover {
+    color: #b71c1c;
+}
+
+.break {
+    clear: both;
+}
+
+.form {
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.inputField {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #CCC;
+}
+
+.knap {
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    background: #FAFAFA;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.latestNews {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.newsBox {
+    flex-basis: 30%;
+    box-sizing: border-box;
+    background: #FAFAFA;
+    padding: 10px;
+    transition: box-shadow 0.5s ease-in;
+    margin-bottom: 20px;
+}
+
+.newsBox:hover {
+    box-shadow: 0px 0px 5px #CCC;
+    cursor: pointer;
+}
+
+@media screen and (max-width:688px) {
+    .newsBox {
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .newsBox {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.newsOverskrift {
+    color: #464646;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.newsText {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.newsLink {
+    color: inherit;
+    text-decoration: none;
+}
+
+.slider {
+    margin-bottom: -5px;
+    margin-top: 80px;
+}
+
+.aboutUs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.col1 {
+    flex-grow: 1;
+}
+
+.col2 {
+    width: 575px;
+}
+
+.aboutUsContent {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    height: 100%;
+}
+
+.fact {
+    background: #F5F5F5;
+    flex-basis: 30%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.factTitle {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.factText {
+    font-weight: 300;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+#graes {
+    height: 100%;
+    max-height: 100px;
+    width: 100%;
+    max-width: 100px;
+    border-radius: 50px;
+}
+
+.ohioFacts {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.ohioFact {
+    background: #F5F5F5;
+    flex-basis: 30%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width:688px) {
+    .ohioFact {
+        flex-basis: 40%;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .ohioFact {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.factIcon {
+    float: left;
+    width: 30%;
+}
+
+.factText {
+    float: left;
+    width: 70%;
+}
+
+#jobs {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background: #2196F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.jobsIcon {
+    overflow: auto;
+    font-size: 3em;
+    color: #FAFAFA;
+}
+
+#economy {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background: #2196F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.economyIcon {
+    overflow: auto;
+    font-size: 3em;
+    color: #FDD835;
+    
+}
+
+#industry {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background: #2196F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.industryIcon {
+    overflow: auto;
+    font-size: 3em;
+    color: #E0E0E0;
+}
+
+#healthcare {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background: #2196F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.healthcareIcon {
+    overflow: auto;
+    font-size: 3em;
+    color: #E53935;
+    -webkit-animation: hjerteAnimation 1s linear infinite;
+	-moz-animation: hjerteAnimation 1s linear infinite;
+	-ms-animation: hjerteAnimation 1s linear infinite;
+	animation: hjerteAnimation 1s linear infinite;
+}
+
+@keyframes "hjerteAnimation" {
+ 0% {
+    -webkit-transform: scale(1.1);
+   	-moz-transform: scale(1.1);
+   	-o-transform: scale(1.1);
+   	-ms-transform: scale(1.1);
+   	transform: scale(1.1);
+ }
+ 50% {
+    -webkit-transform: scale(0.8);
+   	-moz-transform: scale(0.8);
+   	-o-transform: scale(0.8);
+   	-ms-transform: scale(0.8);
+   	transform: scale(0.8);
+ }
+ 100% {
+    -webkit-transform: scale(1);
+   	-moz-transform: scale(1);
+   	-o-transform: scale(1);
+   	-ms-transform: scale(1);
+   	transform: scale(1);
+ }
+
+}
+
+@-moz-keyframes hjerteAnimation {
+ 0% {
+   -moz-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+ 50% {
+   -moz-transform: scale(0.8);
+   transform: scale(0.8);
+ }
+ 100% {
+   -moz-transform: scale(1);
+   transform: scale(1);
+ }
+
+}
+
+@-webkit-keyframes "hjerteAnimation" {
+ 0% {
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+ 50% {
+   -webkit-transform: scale(0.8);
+   transform: scale(0.8);
+ }
+ 100% {
+   -webkit-transform: scale(1);
+   transform: scale(1);
+ }
+
+}
+
+@-ms-keyframes "hjerteAnimation" {
+ 0% {
+   -ms-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+ 50% {
+   -ms-transform: scale(0.8);
+   transform: scale(0.8);
+ }
+ 100% {
+   -ms-transform: scale(1);
+   transform: scale(1);
+ }
+}
+
+#gunlaws {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background: #2196F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.gunlawsIcon {
+    background: url("../img/gun.png") no-repeat;
+    height: 31px;
+    width: 49px;
+    overflow: auto;
+    font-size: 3em;
+    color: #E0E0E0;
+}

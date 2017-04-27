@@ -1,0 +1,48 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+#navigation {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    border-bottom: 1px solid #96c56f;
+    background: #a9db80;
+    background: linear-gradient(to bottom, #a9db80 0%,#96c56f 100%);
+}
+
+#navigation li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline;
+    font-family: verdana, arial, sans-serif;
+    font-size: 1em;
+    margin-right: 20px;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px;
+    transition: background 0.5s ease-in;
+}
+
+#navigation a:hover {
+    background: #96c56f;
+}
+
+.active {
+    background: #96c56f;
+}
+
+.footerTable {
+    width: 100%;
+    padding: 0;
+    border-spacing: 0;
+    border: 0;
+}
+
+.footerItems {
+    vertical-align: top;
+}
